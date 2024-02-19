@@ -1,96 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            html {
+                background-color: #FFFAFA;
+            }
+
+            nav {
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: #1d1e2b !important;
+            }
+
+            nav h1 {
+                margin-top: 20px;
+                color: #FFFAFA !important;
+            }
+
+            .main {
+                margin-top: 90px;
+            }
+
+            article {
+                margin-top: 30px;
+            }
+
+            .about, .services {
+                display: flex;
+                gap: 20px;
+            }
+
+            .about-me {
+                text-align: justify;
+            }
+
+            .about img {
+                height: 250px;
+                border-radius: 2px;
+            }
+
+            .services img {
+                height: 275px;
+                width: 300px;
+                border-radius: 2px;
+            }
+
+
+
+            .contact-send {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <h1 class="title">Kerri-Anne Harris Occupational Therapy</h1>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary" href="tel:0434225358">
+                                <span class="icon"><i class="fas fa-phone"></i></span>
+                                <span><strong>0434 225 358</strong></span>
+                            </a>
+                            <a class="button is-light" href="mailto:kharris.ot@gmail.com">
+                                <span class="icon"><i class="fas fa-envelope"></i></span>
+                                <span>kharris.ot@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main columns is-mobile is-size-7-mobile">
+            <div class="column is-three-fifths is-offset-one-fifth">
+                <article>
+                    <h3 class="subtitle is-3">About</h3>
+                    <div class="about">
+                        <p class="about-me is-size-5">
+                            Kerri-Anne is a qualified Occupational Therapist who has worked
+                            across a range of paediatric settings for over 10 years, before
+                            starting private work in 2023. Currently all appointments are home
+                            visits, however some clinic appointments will soon be available.
+                            Kerri-Anne holds current registration with the Australian Health
+                            Practitioner Regulation Agency (AHPRA). Kerri-Anne has three
+                            children herself.
+                        </p>
+                        <img src="kerrianne.png" alt="Kerri-Anne Harris">
+                    </div>
+                </article>
+                <article>
+                    <h3 class="subtitle is-3">Services</h3>
+                    <div class="services">
+                        <img src="play.png" alt="Services">
+                        <div class="content is-size-5">
+                            Providing Occupational Therapy for children
+                            needing support with:
+                            <ul>
+                                <li>Self-care skills (toileting, mealtimes, bedtime, dressing, hygiene such as brushing teeth and bathing, etc)</li>
+                                <li>Play</li>
+                                <li>Learning</li>
+                                <li>Fine motor skills</li>
+                                <li>Pre-writing development and handwriting</li>
+                                <li>Social interactions</li>
+                                <li>Sensory processing and participation in home/educational/community environments</li>
+                                <li>Regulation (emotional and behavioural)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="subtitle is-3">Contact</h3>
+                    <div class="contact">
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-medium" type="email" placeholder="Name" />
+                                <span class="icon is-small is-left">
+                                <i class="fas fa-face-smile fa-xs"></i>
+                            </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-medium" type="email" placeholder="Phone" />
+                                <span class="icon is-left">
+                              <i class="fas fa-phone fa-sm"></i>
+                            </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-medium" type="email" placeholder="Email" />
+                                <span class="icon is-medium is-left">
+                              <i class="fas fa-envelope"></i>
+                            </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <textarea class="textarea" placeholder="Message"></textarea>
+                        </div>
+
+                        <button class="contact-send button is-primary">Send</button>
+                    </div>
+                </article>
+
+
+
+            </div>
+         </div>
+    </body>
 </html>
