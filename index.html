@@ -14,14 +14,26 @@
             }
 
 
+            p {
+                text-align: justify;
+            }
+
+            img  {
+                border-radius: 5px;
+                height: 280px;
+                width: 230px;
+            }
+
             .header {
+                display: flex;
                 background-color: #1D1E2B;
                 position: sticky;
                 top: 0;
                 width: 100vw;
                 color: #FFFAFA;
                 padding: 10px;
-                display: flex;
+
+                box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.43);
             }
 
             .header h1 {
@@ -68,6 +80,8 @@
                 width: 80vw;
                 padding-left: 20vw;
                 padding-top: 30px;
+                flex-direction: column;
+                gap: 100px;
             }
 
             .about {
@@ -80,15 +94,19 @@
                 gap: 30px;
             }
 
-            p {
-                text-align: justify;
+
+            .services {
+                display: flex;
+                flex-direction: column;
             }
 
-            .selfie  {
-                border-radius: 5px;
-                height: 280px;
-                width: 230px;
+
+            .services-content {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
             }
+
 
             @media (max-width: 540px) {
                 .content {
@@ -101,7 +119,14 @@
                     justify-content: center;
                     align-items: center;
                 }
+
+                .services-content {
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
+
         </style>
     </head>
     <body>
@@ -129,8 +154,32 @@
                 </p>
 
                 <figure>
-                    <img class="selfie" alt="Kerri-Anne Harris" src="kerrianne.png">
+                    <img alt="Kerri-Anne Harris" src="kerrianne.png">
                 </figure>
+                </div>
+            </article>
+
+            <article class="services">
+                <h2>Services</h2>
+                <div class="services-content">
+                    <figure>
+                        <img src="play.png" alt="Services">
+                    </figure>
+
+                    <div>
+                        Providing Occupational Therapy for children
+                        needing support with:
+                         <ul>
+                            <li>Self-care skills (toileting, mealtimes, bedtime, dressing, hygiene such as brushing teeth and bathing, etc)</li>
+                            <li>Play</li>
+                            <li>Learning</li>
+                            <li>Fine motor skills</li>
+                            <li>Pre-writing development and handwriting</li>
+                            <li>Social interactions</li>
+                            <li>Sensory processing and participation in home/educational/community environments</li>
+                            <li>Regulation (emotional and behavioural)</li>
+                        </ul>
+                    </div>
                 </div>
             </article>
         </section>
