@@ -3,183 +3,239 @@
         <title>Kerri-Anne Harris Occupational Therapy</title>
         <meta name="keywords" content="Occupational Therapy, OT, Ipswich">
         <meta name="author" content="Kerri-Anne Harris">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
-            html {
+
+            body {
                 background-color: #FFFAFA;
+                font-family: Verdana, sans-serif;
             }
 
-            nav {
-                padding-left: 30px;
-                padding-right: 30px;
-                background-color: #1d1e2b !important;
+            h2 {
+                padding-bottom: 10px;
             }
 
-            nav h1 {
-                margin-top: 20px;
-                color: #FFFAFA !important;
+
+            p, .services-content {
+                font-size: 1.2rem;
             }
 
-            .main {
-                margin-top: 90px;
-            }
-
-            article {
-                margin-top: 30px;
-            }
-
-            .about, .services {
-                display: flex;
-                gap: 20px;
-            }
-
-            .about-me {
+            p {
                 text-align: justify;
             }
 
-            .about img {
-                height: 250px;
-                border-radius: 2px;
+            img  {
+                border-radius: 5px;
+                height: 280px;
+                width: 230px;
             }
 
-            .services img {
-                height: 275px;
-                width: 300px;
-                border-radius: 2px;
-            }
-
-            .bottom-contact {
+            .header {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
+                background-color: #1D1E2B;
+                position: sticky;
+                top: 0;
+                width: 100vw;
+                color: #FFFAFA;
+                padding: 15px;
 
-                padding-top: 100px;
-                padding-bottom: 100px;
+                box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.43);
             }
 
-            .bottom-contact span {
-                font-size: 32px;
-                padding-left: 10px;
+            .header a {
+                font-weight: lighter;
+            }
+
+            h1 {
+                flex: 1;
+            }
+
+            .contactme {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
             }
 
             .callme {
                 background-color: #BF5FFF;
                 border-color: #BF5FFF;
                 color: white;
+                padding: 10px;
+                border-radius: 5px;
+                text-decoration: none;
             }
+
+            .emailme {
+                background-color: #FFFAFA;
+                border-color: #FFFAFA;
+                color: #1D1E2B;
+                padding: 10px;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+
+            @media (max-width: 540px) {
+                .callme strong {
+                    display: none;
+                }
+
+                .emailme strong {
+                    display: none;
+                }
+            }
+
+            .content {
+                display: flex;
+                width: 80vw;
+                padding-left: 20vw;
+                padding-top: 30px;
+                flex-direction: column;
+                gap: 100px;
+            }
+
+            .about {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .about div {
+                display: flex;
+                gap: 30px;
+            }
+
+
+            .services {
+                display: flex;
+                flex-direction: column;
+            }
+
+
+            .services-content {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+            }
+
+
+            @media (max-width: 540px) {
+                .content {
+                    width: 90vw;
+                    padding-left: 10vw;
+                }
+
+                .about div {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .services-content {
+                    flex-direction: column-reverse;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .footer {
+                color: white;
+                display: flex;
+                margin-top: 50px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                align-items: center;
+                justify-content: center;
+                gap: 40px;
+            }
+
+            .footer a {
+                color: #34364d;
+                text-decoration: none;
+            }
+
+            .footer div {
+                color: #34364d;
+            }
+
+            @media (max-width: 540px) {
+                .footer {
+                    flex-direction: column;
+                }
+            }
+
         </style>
     </head>
     <body>
-        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-            <h1 class="title">Kerri-Anne Harris Occupational Therapy</h1>
-            <div class="navbar-menu">
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a class="button callme" href="tel:0434225358">
-                                <span class="icon"><i class="fas fa-phone"></i></span>
-                                <span><strong>0434 225 358</strong></span>
-                            </a>
-                            <a class="button is-light" href="mailto:kharris.ot@gmail.com">
-                                <span class="icon"><i class="fas fa-envelope"></i></span>
-                                <span>kharris.ot@gmail.com</span>
-                            </a>
-                        </div>
+        <header class="header">
+            <h1>
+                Kerri-Anne Harris Occupational Therapy
+            </h1>
+            <div class="contactme">
+                <a class="callme" href="tel:0434225358">
+                    <i class="fas fa-phone"></i>
+                    <strong>0434 225 358</strong>
+                </a>
+                <a class="emailme" href="mailto:kharris.ot@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    <strong>kharris.ot@gmail.com</strong>
+                </a>
+            </div>
+        </header>
+        <section class="content">
+            <article class="about">
+                <h2>About</h2>
+                <div>
+                <p>
+                    Kerri-Anne is a Occupational Therapist who has worked across a range of paediatric settings for over 13 years, before starting private work in 2023. Currently all appointments are home visits within Ipswich (and visiting Lockyer Valley once a fortnight), however some clinic appointments will soon be available. Kerri-Anne holds current registration with the Australian Health Practitioner Regulation Agency (AHPRA). Kerri-Anne has three children herself, aged between 4 and 12.
+                </p>
+
+                <figure>
+                    <img alt="Kerri-Anne Harris" src="kerrianne.png">
+                </figure>
+                </div>
+            </article>
+
+            <article class="services">
+                <h2>Services</h2>
+                <div class="services-content">
+                    <figure>
+                        <img src="play.png" alt="Services">
+                    </figure>
+
+                    <div>
+                        Providing Occupational Therapy for children
+                        needing support with:
+                         <ul>
+                            <li>Self-care skills (toileting, mealtimes, bedtime, dressing, hygiene such as brushing teeth and bathing, etc)</li>
+                            <li>Play</li>
+                            <li>Learning</li>
+                            <li>Fine motor skills</li>
+                            <li>Pre-writing development and handwriting</li>
+                            <li>Social interactions</li>
+                            <li>Sensory processing and participation in home/educational/community environments</li>
+                            <li>Regulation (emotional and behavioural)</li>
+                        </ul>
                     </div>
                 </div>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <a href="tel:0434225358">
+                <i class="fa-solid fa-phone fa-2xl"></i>
+                <span>0434 225 358</span>
+            </a>
+            <a href="mailto:kharris.ot@gmail.com">
+                <i class="fa-solid fa-envelope fa-2xl"></i>
+                <span>kharris.ot@gmail.com</span>
+            </a>
+            <div>
+                <i class="fa-solid fa-briefcase fa-2xl"></i>
+                <span>ABN 40187 787 375</span>
             </div>
-        </nav>
-        <div class="main columns is-mobile is-size-7-mobile">
-            <div class="column is-three-fifths is-offset-one-fifth">
-                <article>
-                    <h3 class="subtitle is-3">About</h3>
-                    <div class="about">
-                        <p class="about-me is-size-5">
-                            Kerri-Anne is a Occupational Therapist who has worked across a range of paediatric settings for
-                            over 13 years, before starting private work in 2023. Currently all appointments are home visits
-                            within Ipswich (and visiting Lockyer Valley once a fortnight), however some clinic appointments
-                            will soon be available. Kerri-Anne holds current registration with the Australian Health Practitioner
-                            Regulation Agency (AHPRA). Kerri-Anne has three children herself, aged between 4 and 12.
-                        </p>
-                        <img src="kerrianne.png" alt="Kerri-Anne Harris">
-                    </div>
-                </article>
-                <article>
-                    <h3 class="subtitle is-3">Services</h3>
-                    <div class="services">
-                        <img src="play.png" alt="Services">
-                        <div class="content is-size-5">
-                            Providing Occupational Therapy for children
-                            needing support with:
-                            <ul>
-                                <li>Self-care skills (toileting, mealtimes, bedtime, dressing, hygiene such as brushing teeth and bathing, etc)</li>
-                                <li>Play</li>
-                                <li>Learning</li>
-                                <li>Fine motor skills</li>
-                                <li>Pre-writing development and handwriting</li>
-                                <li>Social interactions</li>
-                                <li>Sensory processing and participation in home/educational/community environments</li>
-                                <li>Regulation (emotional and behavioural)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <article>
-                    <div class="bottom-contact">
-                        <div>
-                            <i class="fa-solid fa-phone fa-2xl"></i>
-                            <span>0434 225 358</span>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-envelope fa-2xl"></i>
-                            <span>kharris.ot@gmail.com</span>
-                        </div>
-                    </div>
-                </article>
-        <!--
-                <article>
-                    <h3 class="subtitle is-3">Contact</h3>
-                    <div class="contact">
-                        <div class="field">
-                            <div class="control has-icons-left has-icons-right">
-                                <input class="input is-medium" type="email" placeholder="Name" />
-                                <span class="icon is-small is-left">
-                                <i class="fas fa-face-smile fa-xs"></i>
-                            </span>
-                            </div>
-                        </div>
-
-                        <div class="field">
-                            <div class="control has-icons-left has-icons-right">
-                                <input class="input is-medium" type="email" placeholder="Phone" />
-                                <span class="icon is-left">
-                              <i class="fas fa-phone fa-sm"></i>
-                            </span>
-                            </div>
-                        </div>
-
-                        <div class="field">
-                            <div class="control has-icons-left has-icons-right">
-                                <input class="input is-medium" type="email" placeholder="Email" />
-                                <span class="icon is-medium is-left">
-                              <i class="fas fa-envelope"></i>
-                            </span>
-                            </div>
-                        </div>
-
-                        <div class="field">
-                            <textarea class="textarea" placeholder="Message"></textarea>
-                        </div>
-
-                        <button class="contact-send button is-primary">Send</button>
-                    </div>
-                </article>
-          -->
-
-
-            </div>
-         </div>
+        </footer>
     </body>
 </html>
