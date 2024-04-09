@@ -11,6 +11,7 @@
 
             body {
                 background-color: #FFFAFA;
+                font-family: Verdana, sans-serif;
             }
 
             h2 {
@@ -39,12 +40,16 @@
                 top: 0;
                 width: 100vw;
                 color: #FFFAFA;
-                padding: 10px;
+                padding: 15px;
 
                 box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.43);
             }
 
-            .header h1 {
+            .header a {
+                font-weight: lighter;
+            }
+
+            h1 {
                 flex: 1;
             }
 
@@ -136,7 +141,6 @@
             }
 
             .footer {
-                background-color: #34364d;
                 color: white;
                 display: flex;
                 margin-top: 50px;
@@ -145,6 +149,15 @@
                 align-items: center;
                 justify-content: center;
                 gap: 40px;
+            }
+
+            .footer a {
+                color: #34364d;
+                text-decoration: none;
+            }
+
+            .footer div {
+                color: #34364d;
             }
 
             @media (max-width: 540px) {
@@ -211,14 +224,14 @@
         </section>
 
         <footer class="footer">
-            <div>
+            <a href="tel:0434225358">
                 <i class="fa-solid fa-phone fa-2xl"></i>
                 <span>0434 225 358</span>
-            </div>
-            <div>
+            </a>
+            <a href="mailto:kharris.ot@gmail.com">
                 <i class="fa-solid fa-envelope fa-2xl"></i>
                 <span>kharris.ot@gmail.com</span>
-            </div>
+            </a>
             <div>
                 <i class="fa-solid fa-briefcase fa-2xl"></i>
                 <span>ABN 40187 787 375</span>
